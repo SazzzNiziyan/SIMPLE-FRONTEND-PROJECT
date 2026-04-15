@@ -1,4 +1,4 @@
-<img src="https://github.com/SazzzNiziyan/VISTING-CARD/blob/637fee660cdb21fe2e5bff0c52547f595bad6dad/Screenshot%202025-02-22%20210822.png">
+<img src="https://github.com/SazzzNiziyan/SIMPLE-FRONTEND-PROJECT/blob/2c4aafc76a4fe62c1a13a02008a2aee907daa86f/VISTING-CARD/Screenshot%202025-02-22%20210822.png">
 
 # VISTING-CARD
 
