@@ -1,0 +1,668 @@
+@font-face {
+  font-family: Syne;
+  src: url(./Syne.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 250);
+}
+
+html {
+  font-family: Syne;
+}
+
+body {
+  padding: 1rem;
+}
+main {
+  padding: 1rem;
+  padding-top: 3rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+nav {
+  .country-circle {
+    display: none;
+  }
+  .option {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    svg {
+      width: 3rem;
+      margin-top: -2rem;
+      padding-bottom: -2rem;
+    }
+
+    p {
+      margin-top: -1.4rem;
+      margin-left: 0.8rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+  .darkmode {
+    position: absolute;
+    right: 20%;
+    top: 4.8%;
+    font-size: 1.1rem;
+    .circle {
+      padding: 0.4rem 0 0 0.4rem;
+      width: 4rem;
+      min-height: 2rem;
+      border-radius: 20px;
+      border: 1.5px solid black;
+    }
+  }
+  .menu {
+    position: absolute;
+    top: 4.7%;
+    right: 10%;
+    font-size: 1.9rem;
+    opacity: 0.5;
+  }
+  .line-2 {
+    margin-top: 1rem;
+  }
+}
+
+.view-1 {
+  width: 100%;
+  p {
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 0.3rem;
+    margin-top: 1.7rem;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 3.9rem;
+    width: 70%;
+    transform: scaleY(0.89);
+    line-height: 1em;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1rem;
+    height: 13rem;
+    filter: drop-shadow(0px 0px 6px rgb(0, 0, 0));
+  }
+}
+
+svg {
+  width: 5rem;
+  margin-top: 2rem;
+}
+
+.view-2 {
+  .top {
+    p {
+      margin-top: 1.7em;
+    }
+
+    h1 {
+      font-weight: 500;
+      margin-top: 0.5rem;
+      font-size: 3rem;
+      transform: scaleY(0.89);
+      width: 100%;
+      line-height: 1em;
+      margin-bottom: 1em;
+    }
+
+    .button {
+      padding: 0.7rem 2rem;
+      border-radius: 0.6rem;
+      background-color: rgb(0, 0, 0);
+      color: rgb(254, 255, 247);
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+  .line {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .bottom {
+    h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 2rem;
+      transform: scaleY(0.89);
+      line-height: 1em;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 1em;
+      opacity: 0.8;
+    }
+  }
+}
+
+.view-3 {
+  .our-team {
+    h1 {
+      font-weight: 500;
+      font-size: 3rem;
+      transform: scaleY(0.89);
+      line-height: 1em;
+      margin-top: 2rem;
+    }
+
+    p {
+      margin-top: 0.6rem;
+      font-size: 1.3rem;
+      opacity: 0.8;
+      line-height: 1.35em;
+    }
+  }
+
+  .our-team-members {
+    padding: 0% 0.5rem;
+    video {
+      margin-top: 2.5rem;
+      width: 100%;
+      height: 15em;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 1.6rem;
+      transform: scaleY(0.89);
+      line-height: 1em;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 0.7em;
+      transform: scaleY(1.1);
+      opacity: 0.8;
+    }
+  }
+}
+
+.line-2 {
+  border: 1px solid rgba(0, 0, 0, 0.454);
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.contact {
+  margin-bottom: 2.5rem;
+  svg {
+    width: 4rem;
+    margin: 0.5em;
+    margin-top: 1.5em;
+  }
+  p {
+    margin: 2rem 0 1rem 0;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transform: scaleY(1.3);
+  }
+  h1 {
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 1.3rem;
+    margin-bottom: 2em;
+  }
+  .button {
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 255, 250);
+    word-spacing: 0.7em;
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: Roboto;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 100;
+  }
+}
+
+.view-4 {
+  .address {
+    .logo {
+      display: flex;
+
+      svg {
+        height: 3.7rem;
+        margin-left: -0.6rem;
+      }
+
+      p {
+        margin-top: 3rem;
+        font-weight: 500;
+        font-size: 1.7rem;
+      }
+    }
+
+    h1 {
+      font-size: 1rem;
+      margin: 1rem 0 2.5rem;
+      font-weight: 100;
+      font-family: False;
+      opacity: 0.7;
+    }
+
+    .country-circle {
+      display: flex;
+      gap: 1rem;
+      h2 {
+        font-size: 0.9em;
+        padding: 0.35em;
+        text-align: center;
+        opacity: 0.63;
+        font-family: Roboto Mono;
+        border-radius: 50%;
+        border: 1px solid black;
+        height: 2.1em;
+        width: 2.1em;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 100;
+    opacity: 0.7;
+    display: flex;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: Roboto mono;
+  }
+
+  #button {
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(254, 255, 250);
+    word-spacing: 0.7em;
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: Roboto;
+    width: fit-content;
+    text-decoration: none;
+    font-weight: 100;
+  }
+}
+
+footer {
+  font-family: Roboto Mono;
+  font-size: 1rem;
+  opacity: 0.9;
+  .fisrt-line {
+    p {
+      margin: 2rem 0 0.8rem 4rem;
+      a {
+        color: black;
+      }
+    }
+  }
+  .second-line {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  main {
+    padding: 4rem 14rem;
+  }
+
+  nav {
+    .option {
+      margin-left: 34.7rem;
+      display: flex;
+      gap: 2rem;
+      margin-top: -2rem;
+      margin-bottom: 1rem;
+      font-size: 0.5rem;
+      font-weight: 100;
+      opacity: 0.6;
+    }
+
+    .button {
+      display: block;
+      padding: 0.55rem 1rem;
+      border-radius: 0.5rem;
+      background-color: rgb(26, 26, 26);
+      color: rgb(254, 255, 250);
+      word-spacing: 0.7em;
+      font-weight: 700;
+      font-size: 0.7em;
+      font-family: Roboto;
+      width: fit-content;
+      text-decoration: none;
+      font-weight: 100;
+      position: absolute;
+      right: 26%;
+      top: 4%;
+    }
+
+    .darkmode {
+      font-size: 0.8rem;
+      position: absolute;
+      right: 13.5%;
+      top: 4%;
+
+      .circle{
+        width: 3rem;
+      }
+    }
+    .logo {
+      position: absolute;
+      top: 7%;
+    }
+    .menu {
+      display: none;
+    }
+    .country-circle {
+      display: flex;
+      gap: 0.7rem;
+      h2 {
+        font-size: 0.8em;
+        padding: 0.35em;
+        text-align: center;
+        opacity: 0.63;
+        font-family: Roboto Mono;
+        border-radius: 50%;
+        border: 1px solid black;
+        height: 2.1em;
+        width: 2.1em;
+        position: relative;
+        left: 85.9%;
+        margin-top: -2rem;
+      }
+    }
+    .line-4-1 {
+      border: 1px solid black;
+      width: 0;
+      height: 2rem;
+      position: relative;
+      left: 96%;
+      margin-top: -2.3rem;
+    }
+    .line-4-2 {
+      border: 1px solid black;
+      width: 0;
+      height: 2rem;
+      position: relative;
+      left: 84.45%;
+      margin-top: -2rem;
+    }
+    .line-2 {
+      margin-top: rem;
+    }
+  }
+  body {
+    padding: 0.7rem;
+  }
+  .view-1 {
+    h1 {
+      font-size: 5rem;
+      width: 100%;
+    }
+    img {
+      width: 100%;
+      height: 35rem;
+    }
+  }
+
+  svg {
+    width: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+  }
+  .view-2 {
+    display: flex;
+    gap: 10px;
+    .top {
+      width: 270%;
+      p {
+        margin-top: 4rem;
+        font-size: 0.7rem;
+      }
+      h1 {
+        font-size: 4.6rem;
+        margin-bottom: 18rem;
+        br {
+          display: none;
+        }
+      }
+      .button {
+        font-size: 0.6rem;
+        padding: 0.55rem 1rem;
+        border-radius: 6px;
+      }
+    }
+    .line-line2 {
+      width: 0;
+    }
+    .line:nth-last-child(1) {
+      display: none;
+    }
+    .bottom {
+      margin-left: 1.6rem;
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 1.4rem;
+      }
+      p {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .line {
+    width: 100%;
+    margin-top: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+  }
+
+  .view-3 {
+    display: flex;
+
+    .our-team {
+      width: 40%;
+      height: 40rem;
+      span {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        p {
+          font-size: 1rem;
+          margin-right: 7rem;
+        }
+      }
+    }
+
+    .our-team-members {
+      height: 23rem;
+      margin-left: 1rem;
+    }
+
+    .line-2 {
+      width: 0;
+    }
+    .line-2:nth-last-child(1) {
+      display: none;
+    }
+  }
+
+  .contact {
+    display: flex;
+    position: relative;
+    height: 32rem;
+    .contact-1 {
+      svg {
+        position: absolute;
+        top: 80%;
+      }
+      p {
+        font-size: 0.79em;
+        margin-top: 3rem;
+      }
+      h1 {
+        font-size: 3.9rem;
+        text-shadow: 1px 1px 0 black;
+        margin-top: 0.5rem;
+        transform: scaleX(1.2);
+        margin-left: 4.2rem;
+      }
+    }
+    .line {
+      width: 0%;
+      height: 94%;
+      position: absolute;
+      top: -2%;
+      left: 68%;
+      border: 1px solid rgba(0, 0, 0, 0.318);
+    }
+
+    .contact-2 {
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 2.7rem;
+        margin-left: 13rem;
+        margin-bottom: 23rem;
+      }
+
+      .button {
+        font-size: 0.7rem;
+        margin-left: 13rem;
+        padding: 0.5rem 1rem;
+        background-color: rgb(10, 10, 10);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .view-4 {
+    display: flex;
+    justify-content: space-between;
+    .address {
+      .logo {
+        svg {
+          height: 4rem;
+        }
+        p {
+          margin-top: 4.4rem;
+          margin-left: 0.4rem;
+          font-size: 1.3rem;
+        }
+      }
+      .country-circle {
+        h2 {
+          font-size: 0.7rem;
+          margin-top: 6rem;
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+          font-weight: 700;
+        }
+      }
+    }
+    .line {
+      width: 0%;
+      border: 1px solid rgba(0, 0, 0, 0.318);
+      margin-left: 7rem;
+      margin-right: -11rem;
+    }
+    .line-2 {
+      display: none;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin-top: 4rem;
+    }
+
+    #button {
+      font-size: 0.7rem;
+      padding: 0.4rem 1rem;
+      background-color: rgb(11, 11, 11);
+      opacity: 1;
+    }
+    a {
+      font-size: 0.81rem;
+      width: fit-content;
+    }
+    a {
+      position: relative;
+      text-decoration: none;
+      color: black;
+      padding-bottom: 5px;
+      background-image: linear-gradient(to right, black, black);
+      background-size: 0% 2px;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      transition: background-size 0.3s ease-in-out;
+    }
+
+    a:hover {
+      background-size: 100% 2px;
+    }
+  }
+
+  footer {
+    .fisrt-line {
+      p {
+        margin: 1.5rem -0.1rem;
+        font-size: 0.8rem;
+      }
+    }
+    .second-line {
+      a {
+        font-size: 0.7rem;
+      }
+      margin-right: -66rem;
+      margin-top: -2rem;
+    }
+  }
+}
