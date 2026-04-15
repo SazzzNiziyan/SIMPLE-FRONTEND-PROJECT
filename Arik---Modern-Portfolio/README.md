@@ -2,9 +2,6 @@
 
 A sleek, minimal, and modern portfolio template to showcase your work, skills, and personality. Arik is designed to be lightweight, responsive, and easy to customize so you can get your portfolio online fast.
 
-✨ Live demo: (add your demo URL here)  
-🖼️ Screenshot: (add screenshots in /assets or link here)
-
 ---
 
 ## Features
